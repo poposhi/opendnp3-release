@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\7edef88d68daa2744c621ef6a0a1358a\exe4cpp-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\8420cc555172ccbe436ec220270417d3\exe4cpp-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\e9a31145bc74f3d45d1a34bcbf4252e3\exe4cpp-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\opendnp3-release\_deps\exe4cpp-subbuild\CMakeFiles\exe4cpp-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{181A4435-04AC-39C3-A7DD-E80642E02B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

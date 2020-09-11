@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>opendnp3</id>
+        <version>3.0.4</version>
+        <summary>DNP3 (IEEE-1815) protocol stack</summary>
+        <description>OpenDNP3 is the de facto reference implementation of IEEE-1815 (DNP3), a standards-based SCADA protocol.</description>
+        <authors>Automatak LLC</authors>
+        <projectUrl>https://dnp3.github.io/</projectUrl>
+        <license type="expression">Apache-2.0</license>
+        <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+        <releaseNotes>This package includes both x86 and x64 binaries. You must specify the target platform in your IDE (i.e. you cannot use "AnyCPU")
+        
+        This package depends on VC++ 2019 runtime and OpenSSL 1.1.1.
+        </releaseNotes>
+        <tags>dnp3 SCADA protocol</tags>
+    </metadata>
+</package>

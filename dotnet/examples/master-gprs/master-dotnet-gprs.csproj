@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{353C9F8C-F095-39F6-8BE5-3477EB2F543A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>master-dotnet-gprs</ProjectName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\opendnp3-release\dotnet\examples\master-gprs\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>master-dotnet-gprs</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\opendnp3-release\dotnet\examples\master-gprs\Debug\master-dotnet-gprs.exe</StartProgram>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>C:\opendnp3-release\dotnet\examples\master-gprs\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>master-dotnet-gprs</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\opendnp3-release\dotnet\examples\master-gprs\Release\master-dotnet-gprs.exe</StartProgram>
+    <DebugType>none</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <OutputPath>C:\opendnp3-release\dotnet\examples\master-gprs\MinSizeRel\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>master-dotnet-gprs</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\opendnp3-release\dotnet\examples\master-gprs\MinSizeRel\master-dotnet-gprs.exe</StartProgram>
+    <DebugType>none</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\opendnp3-release\dotnet\examples\master-gprs\RelWithDebInfo\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>master-dotnet-gprs</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\opendnp3-release\dotnet\examples\master-gprs\RelWithDebInfo\master-dotnet-gprs.exe</StartProgram>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <None Include="C:\opendnp3-release\dotnet\examples\master-gprs\CMakeLists.txt">
+    </None>
+  </ItemGroup>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+    Name="CustomCommand_Debug_f50b59db093c9bc76d0f7eb800f6eb90"
+    Inputs="C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCSharpInformation.cmake;C:\opendnp3-release\CMakeFiles\3.18.2\CMakeCSharpCompiler.cmake"
+    Outputs="C:\opendnp3-release\dotnet\examples\master-gprs\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/dotnet/examples/master-gprs/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+    Name="CustomCommand_Release_f50b59db093c9bc76d0f7eb800f6eb90"
+    Inputs="C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCSharpInformation.cmake;C:\opendnp3-release\CMakeFiles\3.18.2\CMakeCSharpCompiler.cmake"
+    Outputs="C:\opendnp3-release\dotnet\examples\master-gprs\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/dotnet/examples/master-gprs/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"
+    Name="CustomCommand_MinSizeRel_f50b59db093c9bc76d0f7eb800f6eb90"
+    Inputs="C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCSharpInformation.cmake;C:\opendnp3-release\CMakeFiles\3.18.2\CMakeCSharpCompiler.cmake"
+    Outputs="C:\opendnp3-release\dotnet\examples\master-gprs\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/dotnet/examples/master-gprs/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"
+    Name="CustomCommand_RelWithDebInfo_f50b59db093c9bc76d0f7eb800f6eb90"
+    Inputs="C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCSharpInformation.cmake;C:\opendnp3-release\CMakeFiles\3.18.2\CMakeCSharpCompiler.cmake"
+    Outputs="C:\opendnp3-release\dotnet\examples\master-gprs\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/opendnp3-release/dotnet/examples/master-gprs/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/dotnet/examples/master-gprs/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <ItemGroup>
+    <Compile Include="C:\opendnp3-release\dotnet\examples\master-gprs\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Include="Threads::Threads">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>Threads::Threads-NOTFOUND</HintPath>
+    </Reference>
+    <Reference Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Include="Threads::Threads">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>Threads::Threads-NOTFOUND</HintPath>
+    </Reference>
+    <Reference Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Include="Threads::Threads">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>Threads::Threads-NOTFOUND</HintPath>
+    </Reference>
+    <Reference Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Include="Threads::Threads">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>Threads::Threads-NOTFOUND</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\opendnp3-release\ZERO_CHECK.vcxproj">
+      <Project>{1799E3DE-D51B-3103-B5AB-556EFCB3E3B0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\opendnp3-release\dotnet\CLRAdapter\DNP3CLRAdapter.vcxproj">
+      <Project>{7AE5E370-B6A5-3A8A-97B2-F31B4D67B0E3}</Project>
+      <Name>DNP3CLRAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opendnp3-release\dotnet\CLRInterface\DNP3CLRInterface.csproj">
+      <Project>{3622E126-E8EC-384E-A5E2-AD5D94CD800B}</Project>
+      <Name>DNP3CLRInterface</Name>
+      <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+    </ProjectReference>
+    <ProjectReference Include="C:\opendnp3-release\cpp\lib\opendnp3.vcxproj">
+      <Project>{28E861DF-E1C8-383C-8688-81522076D860}</Project>
+      <Name>opendnp3</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'MinSizeRel'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'RelWithDebInfo'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      CustomCommand_Debug_f50b59db093c9bc76d0f7eb800f6eb90;
+      CustomCommand_MinSizeRel_f50b59db093c9bc76d0f7eb800f6eb90;
+      CustomCommand_RelWithDebInfo_f50b59db093c9bc76d0f7eb800f6eb90;
+      CustomCommand_Release_f50b59db093c9bc76d0f7eb800f6eb90;
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

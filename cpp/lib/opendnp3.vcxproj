@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28E861DF-E1C8-383C-8688-81522076D860}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opendnp3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\opendnp3-release\cpp\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opendnp3.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opendnp3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\opendnp3-release\cpp\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opendnp3.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opendnp3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\opendnp3-release\cpp\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opendnp3.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opendnp3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\opendnp3-release\cpp\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opendnp3.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opendnp3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opendnp3-release\cpp\lib\include;C:\opendnp3-release\cpp\lib\src;C:\opendnp3-release\_deps\ser4cpp-src\src;C:\opendnp3-release\_deps\exe4cpp-src\src;C:\opendnp3-release\_deps\asio-src\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\opendnp3-release\cpp\lib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/opendnp3-release/cpp/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/cpp/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\opendnp3-release\cpp\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/opendnp3-release/cpp/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/cpp/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\opendnp3-release\cpp\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/opendnp3-release/cpp/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/cpp/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\opendnp3-release\cpp\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/opendnp3-release/cpp/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/opendnp3-release -BC:/opendnp3-release --check-stamp-file C:/opendnp3-release/cpp/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\opendnp3-release\cpp\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\ConsoleLogger.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\DNP3Manager.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\ErrorCodes.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\IResource.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\IStack.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\StackStatistics.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\AnalogCommandEvent.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\AnalogOutput.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\AppConstants.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\BaseMeasurementTypes.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\BinaryCommandEvent.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\ClassField.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\ControlRelayOutputBlock.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\DNPTime.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\EventCells.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\EventTriggers.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\EventType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\Flags.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\GroupVariationID.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\IINField.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\Indexed.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\MeasurementInfo.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\MeasurementTypes.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\OctetData.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\OctetString.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\app\parsing\ICollection.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\ChannelRetry.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\IChannel.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\IChannelListener.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\IListener.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\IOpenDelayStrategy.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\IPEndpoint.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\PrintingChannelListener.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\SerialSettings.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\channel\TLSConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\decoder\Decoder.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\decoder\IDecoderCallbacks.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\AnalogOutputStatusQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\AnalogQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\AssignClassType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\Attributes.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\BinaryOutputStatusQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\BinaryQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\ChannelState.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\CommandPointState.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\CommandStatus.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\CounterQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\DoubleBit.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\DoubleBitBinaryQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventAnalogOutputStatusVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventAnalogVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventBinaryOutputStatusVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventBinaryVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventCounterVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventDoubleBinaryVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventFrozenCounterVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventMode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventOctetStringVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\EventSecurityStatVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\FlagsType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\FlowControl.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\FrozenCounterQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\FunctionCode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\GroupVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\IndexQualifierMode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\IntervalUnits.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\LinkFunction.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\LinkStatus.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\MasterTaskType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\OperateType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\OperationType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\Parity.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\PointClass.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\QualifierCode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\RestartMode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\RestartType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\ServerAcceptMode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticAnalogOutputStatusVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticAnalogVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticBinaryOutputStatusVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticBinaryVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticCounterVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticDoubleBinaryVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticFrozenCounterVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticOctetStringVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticSecurityStatVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticTimeAndIntervalVariation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StaticTypeBitmask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\StopBits.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\TaskCompletion.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\TimestampQuality.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\TimeSyncMode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\gen\TripCloseCode.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\link\Addresses.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\link\ILinkListener.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\link\LinkConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\link\LinkHeaderFields.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\link\LinkStatistics.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\logging\ILogHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\logging\LogLevels.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\logging\Logger.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\CommandPointResult.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\CommandResultCallbackT.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\CommandSet.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\DefaultListenCallbacks.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\DefaultMasterApplication.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\HeaderInfo.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\HeaderTypes.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ICommandCollection.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ICommandProcessor.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ICommandTaskResult.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IListenCallbacks.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IMaster.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IMasterApplication.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IMasterOperations.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IMasterScan.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IMasterSession.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ISessionAcceptor.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ISOEHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ITaskCallback.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\IUTCTimeSource.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\MasterParams.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\PrintingSOEHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\ResponseInfo.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\RestartOperationResult.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\TaskConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\TaskId.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\TaskInfo.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\master\X509Info.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\ApplicationIIN.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\DatabaseConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\DefaultOutstationApplication.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\EventBufferConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\ICommandHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\IDnpTimeSource.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\IOutstation.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\IOutstationApplication.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\IUpdateHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\MeasurementConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\NumRetries.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\OutstationConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\OutstationParams.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\OutstationStackConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\SimpleCommandHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\StaticTypeBitfield.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\UpdateBuilder.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\outstation\Updates.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\util\Buffer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\util\StaticOnly.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\util\TimeDuration.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\util\Timestamp.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\util\Uncopyable.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\include\opendnp3\util\UTCTimestamp.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\DNP3ManagerImpl.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\IResourceManager.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\LayerInterfaces.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\ResourceManager.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\SequenceNum.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\StackBase.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\APDUBuilders.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\APDUHeader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\APDULogging.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\APDURequest.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\APDUResponse.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\APDUWrapper.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\AppControlField.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\AppSeqNum.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\BitfieldRangeWriteIterator.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\CountWriteIterator.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\DNP3Serializer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\DownSampling.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\Functions.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\GroupVariationRecord.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\HeaderWriter.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\IINValue.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\IVariableLength.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\MeasurementFactory.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\MeasurementTypeSpecs.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\Message.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\PrefixedWriteIterator.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\QualityFlags.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\Range.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\RangeWriteIterator.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\SequenceInfo.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\Serializer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\TxBuffer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\WriteConversions.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\WriteConversionTemplates.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\APDUHeaderParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\APDUParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\BitReader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\BufferedCollection.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\Collections.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\CountIndexParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\CountParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\DNPTimeParsing.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\Functions.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\IAPDUHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\IWhiteList.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\NumParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\ObjectHeaderParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\ParseResult.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\ParserSettings.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\PrefixFields.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\app\parsing\RangeParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\ASIOSerialHelpers.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\DNP3Channel.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\IAsyncChannel.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\IChannelCallbacks.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\IOHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\IPEndpointsList.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\LoggingConnectionCondition.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\SerialChannel.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\SerialIOHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\SocketHelpers.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\TCPClient.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\TCPClientIOHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\TCPServer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\TCPServerIOHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\TCPSocketChannel.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\UDPClient.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\UDPClientIOHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\channel\UDPSocketChannel.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\decoder\DecoderImpl.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\decoder\Indent.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\decoder\LoggingHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\CommandStatusSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\DoubleBitSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\FlagsTypeSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\FlowControlSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\FunctionCodeSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\GroupVariationSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\IntervalUnitsSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\LinkFunctionSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\ParitySerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\QualifierCodeSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\StopBitsSerialization.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group1.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group2.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group3.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group4.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group10.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group11.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group12.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group13.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group20.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group21.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group22.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group23.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group30.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group32.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group40.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group41.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group42.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group43.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group50.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group51.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group52.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group60.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group70.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group80.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group110.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group111.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group112.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group113.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\CRC.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\IFrameSink.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\ILinkLayer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\ILinkSession.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\ILinkTx.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\ITransportSegment.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkContext.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkFrame.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkHeader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkLayer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkLayerConfig.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkLayerConstants.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkLayerParser.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\LinkSession.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\PriLinkLayerStates.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\SecLinkLayerStates.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\ShiftableBuffer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\link\Singleton.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\logging\ConsolePrettyPrinter.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\logging\HexLogging.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\logging\Location.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\logging\LogMacros.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\logging\Strings.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\AssignClassTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\ClearRestartTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\CommandSetOps.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\CommandTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\CommandTaskResult.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\DisableUnsolicitedTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\EmptyResponseTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\EnableUnsolicitedTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\EventScanTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\HeaderBuilder.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\HeaderConversions.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\ICommandHeader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\IMasterScheduler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\IMasterTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\IMasterTaskRunner.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\IScheduleCallback.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\LANTimeSyncTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MasterContext.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MasterSchedulerBackend.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MasterSessionStack.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MasterStack.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MasterTasks.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MasterTCPServer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\MeasurementHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\PollTaskBase.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\RestartOperationTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\ScanResult.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\SerialTimeSyncTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\StartupIntegrityPoll.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\TaskBehavior.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\TaskContext.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\TaskPriority.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\TimeSyncHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\TypedCommandHeader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\master\UserPollTask.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\AssignClassHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\StaticDataCell.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ClassBasedRequestHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\CommandActionAdapter.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\CommandResponseHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ConstantCommandAction.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ControlState.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\Database.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\DeferredRequest.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\Event.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\FreezeRequestHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IClassAssigner.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ICommandAction.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IEventReceiver.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IEventRecorder.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IEventSelector.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IINHelpers.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IResponseLoader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\IStaticSelector.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\OctetStringSerializer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationChannelStates.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationContext.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationSeqNum.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationStack.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationStates.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ParsedRequest.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ReadHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\RequestHistory.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\ResponseContext.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\StaticDataMap.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\StaticWriters.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\TimeSyncState.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\WriteHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\ASDUEventWriteHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\ClazzCount.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventBuffer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventCollection.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventLists.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventRecord.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventSelection.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventState.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventStorage.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventTypeImpl.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventUpdate.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventWriters.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventWriting.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\IEventType.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\IEventWriteHandler.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\List.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\TypedEventRecord.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\outstation\event\TypedStorage.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportConstants.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportHeader.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportLayer.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportRx.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportSeqNum.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportStack.h" />
+    <ClInclude Include="C:\opendnp3-release\cpp\lib\src\transport\TransportTx.h" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\ConsoleLogger.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\DNP3Manager.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\DNP3ManagerImpl.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\ResourceManager.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\AnalogCommandEvent.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\AnalogOutput.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\APDUBuilders.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\APDUHeader.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\APDULogging.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\APDURequest.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\APDUResponse.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\APDUWrapper.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\AppControlField.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\BinaryCommandEvent.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\ClassField.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\ControlRelayOutputBlock.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\EventTriggers.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\Functions.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\GroupVariationRecord.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\HeaderWriter.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\IINField.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\MeasurementInfo.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\MeasurementTypes.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\OctetData.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\QualityFlags.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\APDUHeaderParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\APDUParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\BitReader.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\CountIndexParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\CountParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\IAPDUHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\NumParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\ObjectHeaderParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\app\parsing\RangeParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\ASIOSerialHelpers.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\ChannelRetry.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\DNP3Channel.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\IOHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\IOpenDelayStrategy.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\IPEndpointsList.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\SerialChannel.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\SerialIOHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\TCPClient.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\TCPClientIOHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\TCPServer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\TCPServerIOHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\TCPSocketChannel.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\UDPClient.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\UDPClientIOHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\channel\UDPSocketChannel.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\decoder\Decoder.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\decoder\DecoderImpl.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\decoder\LoggingHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\AnalogOutputStatusQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\AnalogQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\AssignClassType.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\Attributes.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\BinaryOutputStatusQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\BinaryQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\ChannelState.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\CommandPointState.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\CommandStatus.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\CounterQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\DoubleBit.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\DoubleBitBinaryQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventAnalogOutputStatusVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventAnalogVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventBinaryOutputStatusVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventBinaryVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventCounterVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventDoubleBinaryVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventFrozenCounterVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventMode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\EventOctetStringVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\FlagsType.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\FlowControl.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\FrozenCounterQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\FunctionCode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\GroupVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\IndexQualifierMode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\IntervalUnits.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\LinkFunction.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\LinkStatus.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\MasterTaskType.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\OperateType.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\OperationType.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\Parity.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\PointClass.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\QualifierCode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\RestartMode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\RestartType.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\ServerAcceptMode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticAnalogOutputStatusVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticAnalogVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticBinaryOutputStatusVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticBinaryVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticCounterVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticDoubleBinaryVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticFrozenCounterVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticOctetStringVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticTimeAndIntervalVariation.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StaticTypeBitmask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\StopBits.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\TaskCompletion.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\TimestampQuality.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\TimeSyncMode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\TripCloseCode.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group1.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group2.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group3.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group4.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group10.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group11.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group12.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group13.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group20.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group21.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group22.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group23.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group30.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group32.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group40.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group41.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group42.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group43.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group50.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group51.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\gen\objects\Group52.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\Addresses.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\CRC.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkContext.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkFrame.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkHeader.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkHeaderFields.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkLayer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkLayerParser.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\LinkSession.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\PriLinkLayerStates.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\SecLinkLayerStates.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\link\ShiftableBuffer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\logging\LogLevels.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\AssignClassTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\ClearRestartTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\CommandSet.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\CommandSetOps.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\CommandTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\CommandTaskResult.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\DefaultListenCallbacks.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\DefaultMasterApplication.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\DisableUnsolicitedTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\EmptyResponseTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\EnableUnsolicitedTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\EventScanTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\HeaderConversions.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\HeaderTypes.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\IMasterTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\LANTimeSyncTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterContext.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterScan.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterSchedulerBackend.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterSessionStack.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterStack.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterTasks.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MasterTCPServer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\MeasurementHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\PollTaskBase.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\PrintingCommandResultCallback.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\PrintingSOEHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\RestartOperationTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\SerialTimeSyncTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\StartupIntegrityPoll.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\TaskBehavior.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\TaskContext.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\master\UserPollTask.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\ApplicationIIN.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\AssignClassHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\ClassBasedRequestHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\CommandActionAdapter.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\CommandResponseHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\Database.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\DatabaseConfig.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\DefaultOutstationApplication.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\DeferredRequest.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\EventBufferConfig.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\FreezeRequestHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\IINHelpers.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\IOutstationApplication.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\NumRetries.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\OctetStringSerializer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationContext.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationStack.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\OutstationStates.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\ReadHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\RequestHistory.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\ResponseContext.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\SimpleCommandHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\StaticDataMap.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\StaticWriters.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\UpdateBuilder.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\WriteHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\ASDUEventWriteHandler.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventBuffer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventLists.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventRecord.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventSelection.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventStorage.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventWriters.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\outstation\event\EventWriting.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\transport\TransportHeader.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\transport\TransportLayer.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\transport\TransportRx.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\transport\TransportStack.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\transport\TransportTx.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\util\TimeDuration.cpp" />
+    <ClCompile Include="C:\opendnp3-release\cpp\lib\src\util\Timestamp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\opendnp3-release\ZERO_CHECK.vcxproj">
+      <Project>{1799E3DE-D51B-3103-B5AB-556EFCB3E3B0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

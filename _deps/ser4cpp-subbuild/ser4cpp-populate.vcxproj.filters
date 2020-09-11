@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\eb4ce86bb3b696c24c833efd54a44162\ser4cpp-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\29853402f020e3eb0f383fed5804c950\ser4cpp-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\61420108fc20818f5b6f94e049d6b000\ser4cpp-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\opendnp3-release\_deps\ser4cpp-subbuild\CMakeFiles\ser4cpp-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{060720FE-76BC-3182-B2CD-586DC57576E9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
